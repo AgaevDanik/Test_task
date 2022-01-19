@@ -1,7 +1,8 @@
 class Frame:
 
     def __init__(self, data_list: list, border_sign: str, name: str):
-        self.data_list = data_list
+        if data_list:
+            self.data_list = data_list
         self.border_sign = border_sign
         self.name = name
 
@@ -36,10 +37,8 @@ class Frame:
 
 
 if __name__ == '__main__':
-    pyramid = Frame(['    _',
-                     '   ___',
-                     '  _____',
-                     ' _______',
-                     '_________',
-                     '   _'], '*', 'pyramid')
+    pyramid = Frame(['   _',
+                     '  ___',
+                     ' _____',
+                     '_______'], '*', 'pyramid')
     pyramid.print_frame()
