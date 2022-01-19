@@ -11,7 +11,7 @@ class Frame:
     def get_max_len(self) -> int:
         max_len = 0
         for i in self.data_list:
-            if i.__len__() > 0:
+            if i.__len__() > max_len:
                 max_len = i.__len__()
 
         return max_len
@@ -40,5 +40,6 @@ if __name__ == '__main__':
                      '   ___',
                      '  _____',
                      ' _______',
-                     '_________'], '*', 'pyramid')
+                     '_________',
+                     '   _'], '*', 'pyramid')
     pyramid.print_frame()

@@ -15,7 +15,7 @@ class TestFrame(unittest.TestCase):
     def test_get_delta(self):
         self.assertEqual(self.A.get_delta('test'), 4)
 
-    def test_make_kontent_row(self):
+    def test_make_content_row(self):
         self.assertEqual(self.A.make_content_row('test'), '* test     *')
 
 
